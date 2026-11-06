@@ -1,0 +1,33 @@
+body {
+    background-color: #f4f7fb;
+    color: #1d2c40;
+}
+
+.menu {
+    text-align: center;
+    padding: 15px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: sticky;
+}
+
+.rodape {
+    background-color: #0d1e35;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    unicode-bidi: isolate;
+    color: #c2cfde;
+}
+
+#div_rodape_links {
+    a {
+        color: white;
+    }
+}
+
+a {
+    color: #03005b;
+}
