@@ -4,6 +4,8 @@ body {
 }
 
 .menu {
+    background-color: #f4f7fb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 15px 0;
     top: 0;
@@ -14,11 +16,7 @@ body {
 
 .rodape {
     background-color: #0d1e35;
-    bottom: 0;
-    left: 0;
-    right: 0;
     display: block;
-    unicode-bidi: isolate;
     color: #c2cfde;
 }
 
@@ -30,4 +28,11 @@ body {
 
 a {
     color: #03005b;
+}
+
+#feedback {
+    width: 100%;
+    max-width: 100%;
+    resize: none;
+    box-sizing: border-box;
 }
