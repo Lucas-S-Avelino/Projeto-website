@@ -5,42 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia de estudos</title>
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/base.css">
 
 </head>
 
 <body>
-    <header class="menu">
-        <a href="../index.html">Início</a>
-        <a href="disciplinas.html">Disciplina</a>
-        <a href="guia_de_estudos.html">Guia_de_estudos</a>
-        <a href="materiais.html">Materiais</a>
-        <a href="contato.html">Contato</a>
+   <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html" aria-label="Portal da turma de Ciências da Computação 2026.1 — início">
+          <span class="brand-mark" aria-hidden="true"><span>CC</span><i>26.1</i></span>
+          <span class="brand-copy">
+            <strong>Ciência<span>.</span></strong>
+            <small>Computação · turma 2026.1</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+            <a href="../index.html">Início</a>
+            <a href="disciplinas.html" >Disciplina</a>
+            <a href="guia_de_estudos.html" aria-current="page">Guia de estudos</a>
+            <a href="materiais.html">Materiais</a>
+            <a href="contato.html">Contato</a>
+        </nav>
     </header>
+    <main>
 
+    </main>
 
-
-    <footer class="rodape">
-        <div>
-            <div>
-
-                <h2>Ciências da Computação · turma 2026.1</h2>
-                <p>Um ponto de encontro para estudar, trocar conhecimento e criar.</p>
-            </div>
-            <div id="div_rodape_links">
-                <h3>NAVEGUE</h3><br>
-                <a href="disciplinas.html">Disciplina</a><br>
-                <a href="guia_de_estudos.html">Guia_de_estudos</a><br>
-                <a href="materiais.html">Materiais</a><br>
-                <a href="contato.html">Contato</a>
-            </div>
-            <div>
-                <h3>SOBRE ESTE PORTAL</h3>
-                <p>Conteúdo de apoio da turma. Confirme atualizações e orientações acadêmicas com os docentes.</p>
-
-                <span>SEMESTRE <b>2026.1</b></span>
-            </div>
-        </div>
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-brand-block"><a class="brand brand-footer" href="../index.html" aria-label="Voltar ao início do portal"><span class="brand-mark" aria-hidden="true"><span>CC</span><i>26.1</i></span><span class="brand-copy"><strong>Ciência<span>.</span></strong><small>Computação · turma 2026.1</small></span></a><p>Um ponto de encontro para estudar, trocar conhecimento e criar.</p></div>
+        <div class="footer-nav-block"><span class="footer-label">NAVEGUE</span><a href="./disciplinas.html">Disciplinas e ementas</a><a href="./guia_de_estudos.html">Guia de estudos</a><a href="./materiais.html">Materiais de aula</a><a href="./contato.html">Contato</a></div>
+        <div class="footer-note-block"><span class="footer-label">SOBRE ESTE PORTAL</span><p>Conteúdo de apoio da turma. Confirme atualizações e orientações acadêmicas com os docentes.</p><span class="footer-semester">SEMESTRE <strong>2026.1</strong></span></div>
+        <a class="uninassau-logo-link" href="https://www.uninassau.edu.br/" target="_blank" rel="noopener noreferrer" aria-label="Acessar o site da UNINASSAU"><img class="footer-logo" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/uninassau-logo-png_seeklogo-475645-dEZRGXLg1BtYuKZVn3dPVuuZKiru9s.png" alt="Logo UNINASSAU" loading="lazy"></a>
+      </div>
+      <div class="container footer-bottom"><span>© 2026 · Portal da turma de Ciências da Computação</span><a href="#main-content">Voltar ao topo <span aria-hidden="true">↑</span></a></div>
     </footer>
 </body>
 
