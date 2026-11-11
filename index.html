@@ -5,40 +5,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <header class="menu">
-        <a href="index.html">Início</a>
-        <a href="paginas/disciplinas.html">Disciplina</a>
-        <a href="paginas/guia_de_estudos.html">Guia_de_estudos</a>
-        <a href="paginas/materiais.html">Materiais</a>
-        <a href="paginas/contato.html">Contato</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html" aria-label="Portal da turma de Ciências da Computação 2026.1 — início">
+          <span class="brand-mark" aria-hidden="true"><span>CC</span><i>26.1</i></span>
+          <span class="brand-copy">
+            <strong>Ciência<span>.</span></strong>
+            <small>Computação · turma 2026.1</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+            <a href="index.html" aria-current="page">Início</a>
+            <a href="paginas/disciplinas.html" >Disciplina</a>
+            <a href="paginas/guia_de_estudos.html">Guia de estudos</a>
+            <a href="paginas/materiais.html">Materiais</a>
+            <a href="paginas/contato.html">Contato</a>
+        </nav>
     </header>
-
-
-    <footer class="rodape">
-        <div>
-            <div>
-
-                <h2>Ciências da Computação · turma 2026.1</h2>
-                <p>Um ponto de encontro para estudar, trocar conhecimento e criar.</p>
+    <main id="main-content" tabindex="-1">
+      <section class="page-view" id="page-inicio" aria-labelledby="home-title">
+        <div class="container hero-wrap">
+          <div class="hero">
+            <div class="hero-copy">
+              <div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Ciências da Computação <span class="eyebrow-divider">/</span> 2026.1</div>
+              <h1 id="home-title" tabindex="-1">Tecnologia que começa com <em>ideias.</em></h1>
+              <p>Um espaço da turma para conectar fundamentos, desenvolvimento de software e impacto social — dentro e fora da sala de aula.</p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="paginas/disciplinas.html">Conheça as disciplinas <span aria-hidden="true">→</span></a>
+                <a class="button button-quiet" href="paginas/guia_de_estudos.html">Acessar guia de estudos</a>
+              </div>
+              <div class="hero-note"><span class="note-mark" aria-hidden="true">CC</span><span>Aprender fazendo. Construir em conjunto. Transformar com tecnologia.</span></div>
             </div>
-            <div id="div_rodape_links">
-                <h3>NAVEGUE</h3><br>
-                <a href="paginas/disciplinas.html">Disciplina</a><br>
-                <a href="paginas/guia_de_estudos.html">Guia_de_estudos</a><br>
-                <a href="paginas/materiais.html">Materiais</a><br>
-                <a href="paginas/contato.html">Contato</a>
+            <div class="hero-visual">
+              <img src="./assets/turma-laboratorio.png" alt="Estudantes colaboram em um laboratório de informática universitário" fetchpriority="high">
+              <div class="hero-photo-shade" aria-hidden="true"></div>
+              <div class="photo-caption"><span class="photo-caption-dot" aria-hidden="true"></span> Conhecimento em construção</div>
+              <div class="hero-float-card">
+                <span class="float-label">SEMESTRE ATUAL</span>
+                <strong>2026<span>.1</span></strong>
+                <span class="float-foot">7 disciplinas · novas possibilidades</span>
+              </div>
             </div>
-            <div>
-                <h3>SOBRE ESTE PORTAL</h3>
-                <p>Conteúdo de apoio da turma. Confirme atualizações e orientações acadêmicas com os docentes.</p>
-
-                <span>SEMESTRE <b>2026.1</b></span>
-            </div>
+          </div>
+          <div class="hero-bottomline"><span>Portal acadêmico da turma</span><span class="hero-bottomline-rule" aria-hidden="true"></span><span>Conhecimento compartilhado, aprendizado ampliado</span></div>
         </div>
+
+        <section class="container stats-grid" aria-label="Resumo do período">
+          <article class="stat-card"><span class="stat-icon stat-icon-blue" aria-hidden="true">07</span><div><strong>disciplinas</strong><span>no período atual</span></div></article>
+          <article class="stat-card"><span class="stat-icon stat-icon-cyan" aria-hidden="true">01</span><div><strong>projeto de extensão</strong><span>com atuação em comunidades</span></div></article>
+          <article class="stat-card"><span class="stat-icon stat-icon-slate" aria-hidden="true">∞</span><div><strong>possibilidades</strong><span>para aprender e criar</span></div></article>
+        </section>
+
+        <section class="section-block container">
+          <div class="section-heading section-heading-split">
+            <div><span class="section-kicker">O período em perspectiva</span><h2>Uma base forte para <span>construir o futuro.</span></h2></div>
+            <p>Da lógica dos algoritmos à organização dos computadores, cada disciplina abre uma nova lente para entender como a tecnologia funciona — e como pode servir às pessoas.</p>
+          </div>
+          <div class="learning-grid">
+            <article class="learning-card learning-card-featured">
+              <div class="learning-card-copy"><span class="mini-label"><span class="mini-dot"></span> Aprendizagem com impacto</span><h3>Tecnologia também é encontro.</h3><p>Em Atividades Práticas Interdisciplinares de Extensão I, a turma leva conhecimento digital a comunidades por meio de oficinas, consultorias e ferramentas tecnológicas.</p><a href="paginas/" class="text-link">Ver projeto de extensão <span aria-hidden="true">→</span></a></div>
+              <img src="./assets/oficina-comunidade.png" alt="Estudantes universitários orientam participantes em uma oficina de tecnologia na comunidade" loading="lazy">
+              <span class="image-credit">Imagem ilustrativa gerada</span>
+            </article>
+            <article class="learning-card learning-card-compact">
+              <span class="card-index">01 / FUNDAMENTOS</span>
+              <span class="line-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5v-16Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M4 17.5A2.5 2.5 0 0 1 6.5 15H20M8 7h8M8 10h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+              <h3>Raciocínio estruturado</h3><p>Algoritmos, programação, dados e arquitetura formam o vocabulário essencial da computação.</p><a href="paginas/disciplinas.html" class="text-link">Explorar ementas <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="learning-card learning-card-compact learning-card-dark">
+              <span class="card-index">02 / CRIAÇÃO</span>
+              <span class="line-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <h3>Ideias em movimento</h3><p>Engenharia de Software, IA e Web Coding conectam projeto, experimentação e construção.</p><a href="paginas/materiais.html" class="text-link">Ir para os materiais <span aria-hidden="true">→</span></a>
+            </article>
+          </div>
+        </section>
+
+        <section class="pathway-section">
+          <div class="container pathway-inner">
+            <div class="pathway-heading"><span class="section-kicker section-kicker-light">Como as peças se conectam</span><h2>Uma jornada, <span>múltiplos caminhos.</span></h2><p>Use este portal como ponto de partida para acompanhar o período e encontrar recursos para estudar.</p></div>
+            <div class="pathway-steps">
+              <a href="paginas/disciplinas.html" class="pathway-step"><span class="pathway-number">01</span><span><strong>Entenda</strong><small>Consulte as ementas e os objetivos de cada disciplina.</small></span><span class="pathway-arrow" aria-hidden="true">↗</span></a>
+              <a href="paginas/guia_de_estudos.html" class="pathway-step"><span class="pathway-number">02</span><span><strong>Explore</strong><small>Encontre documentação, livros e boas práticas de estudo.</small></span><span class="pathway-arrow" aria-hidden="true">↗</span></a>
+              <a href="paginas/materiais.html" class="pathway-step"><span class="pathway-number">03</span><span><strong>Pratique</strong><small>Acesse resumos, referências visuais e atividades de revisão.</small></span><span class="pathway-arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-brand-block"><a class="brand brand-footer" href="index.html" aria-label="Voltar ao início do portal"><span class="brand-mark" aria-hidden="true"><span>CC</span><i>26.1</i></span><span class="brand-copy"><strong>Ciência<span>.</span></strong><small>Computação · turma 2026.1</small></span></a><p>Um ponto de encontro para estudar, trocar conhecimento e criar.</p></div>
+        <div class="footer-nav-block"><span class="footer-label">NAVEGUE</span><a href="paginas/disciplinas.html">Disciplinas e ementas</a><a href="paginas/guia_de_estudos.html">Guia de estudos</a><a href="paginas/materiais.html">Materiais de aula</a><a href="paginas/contato.html">Contato</a></div>
+        <div class="footer-note-block"><span class="footer-label">SOBRE ESTE PORTAL</span><p>Conteúdo de apoio da turma. Confirme atualizações e orientações acadêmicas com os docentes.</p><span class="footer-semester">SEMESTRE <strong>2026.1</strong></span></div>
+        <a class="uninassau-logo-link" href="https://www.uninassau.edu.br/" target="_blank" rel="noopener noreferrer" aria-label="Acessar o site da UNINASSAU"><img class="footer-logo" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/uninassau-logo-png_seeklogo-475645-dEZRGXLg1BtYuKZVn3dPVuuZKiru9s.png" alt="Logo UNINASSAU" loading="lazy"></a>
+      </div>
+      <div class="container footer-bottom"><span>© 2026 · Portal da turma de Ciências da Computação</span><a href="#main-content">Voltar ao topo <span aria-hidden="true">↑</span></a></div>
     </footer>
 </body>
 
