@@ -1,46 +1,371 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Disciplinas</title>
-    <link rel="stylesheet" href="../css/base.css" />
-  </head>
 
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="../index.html" aria-label="Portal da turma de Ciências da Computação 2026.1 — início">
-          <span class="brand-mark" aria-hidden="true"><span>CC</span><i>26.1</i></span>
-          <span class="brand-copy">
-            <strong>Ciência<span>.</span></strong>
-            <small>Computação · turma 2026.1</small>
-          </span>
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disciplinas</title>
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/disciplinas.css" />
+</head>
 
-        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="main-nav">
-          <span></span><span></span><span></span>
-        </button>
-        <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
-            <a href="../index.html">Início</a>
-            <a href="disciplinas.html" aria-current="page">Disciplina</a>
-            <a href="guia_de_estudos.html">Guia de estudos</a>
-            <a href="materiais.html">Materiais</a>
-            <a href="contato.html">Contato</a>
-        </nav>
-    </header>
-    <main>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Portal da turma de Ciências da Computação 2026.1 — início">
+        <span class="brand-mark" aria-hidden="true"><span>CC</span><i>26.1</i></span>
+        <span class="brand-copy">
+          <strong>Ciência<span>.</span></strong>
+          <small>Computação · turma 2026.1</small>
+        </span>
+      </a>
 
-    </main>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu de navegação"
+        aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a href="../index.html">Início</a>
+        <a href="disciplinas.html" aria-current="page">Disciplina</a>
+        <a href="guia_de_estudos.html">Guia de estudos</a>
+        <a href="materiais.html">Materiais</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+  </header>
 
-    <footer class="site-footer">
-      <div class="container footer-main">
-        <div class="footer-brand-block"><a class="brand brand-footer" href="../index.html" aria-label="Voltar ao início do portal"><span class="brand-mark" aria-hidden="true"><span>CC</span><i>26.1</i></span><span class="brand-copy"><strong>Ciência<span>.</span></strong><small>Computação · turma 2026.1</small></span></a><p>Um ponto de encontro para estudar, trocar conhecimento e criar.</p></div>
-        <div class="footer-nav-block"><span class="footer-label">NAVEGUE</span><a href="./disciplinas.html">Disciplinas e ementas</a><a href="./guia_de_estudos.html">Guia de estudos</a><a href="./materiais.html">Materiais de aula</a><a href="./contato.html">Contato</a></div>
-        <div class="footer-note-block"><span class="footer-label">SOBRE ESTE PORTAL</span><p>Conteúdo de apoio da turma. Confirme atualizações e orientações acadêmicas com os docentes.</p><span class="footer-semester">SEMESTRE <strong>2026.1</strong></span></div>
-        <a class="uninassau-logo-link" href="https://www.uninassau.edu.br/" target="_blank" rel="noopener noreferrer" aria-label="Acessar o site da UNINASSAU"><img class="footer-logo" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/uninassau-logo-png_seeklogo-475645-dEZRGXLg1BtYuKZVn3dPVuuZKiru9s.png" alt="Logo UNINASSAU" loading="lazy"></a>
+  <!-- PÁRTE PRINCIPAL DA PÁGINA COMEÇA AQUI-->
+  <main>
+    <section>
+      <div class="page-disciplina">
+        <div class="upper-area">
+          <div class="upper-area-disciplinas">
+            <span class="section-kicker">Canal aberto · turma 2026.1</span>
+            <h1>Disciplinas & ementas.</h1>
+            <p>Consulte os conteúdos previstos para o período. Abra cada disciplina para ver a ementa completa.</p>
+          </div>
+          <div class="upper-area-disciplinas-number">
+
+            <span id="disciplina-number">07
+            </span>
+            <strong>Componentes curriculares</strong>
+          </div>
+
+        </div>
+
+        <!-- BARRA DE PESQUISA-->
+
+        <div class="search-bar">
+          <div class="input-search">
+            <label for="search-box" aria-hidden="true">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+            </label>
+            <input id="search-box" type="search" placeholder="Buscar por disciplina, tema ou tecnologia...">
+          </div>
+          <span>7 disciplinas neste período</span>
+        </div>
+
+        <!--ÁREA DAS DISCIPLINAS-->
+        <section class="disciplinas-list">
+          <details>
+            <summary>
+              <span class="disciplinas-number-icon">01</span>
+              <div class="disciplinas-info">
+                <strong>Atividades Práticas Interdisciplinares de Extensão I</strong>
+                <span class="disciplinas-info-category">projeto · Tecnologia e Sociedade</span>
+              </div>
+
+              <span class="disciplinas-button">Extensão</span>
+            </summary>
+
+            <div class="disciplinas-extensao">
+              <span class="section-kicker">Ementa e orientações</span>
+              <h3>Tecnologia e Sociedade</h3>
+              <p>O projeto visa capacitar a sociedade em tecnologia, promovendo a criação de ferramentas tecnológicas,
+                consultorias, palestras, oficinas ou minicursos nas áreas de informática básica, redes sociais, criação
+                de
+                sites e segurança.</p>
+
+              <div class="disciplinas-text-shell">
+                <div class="disciplinas-text-chard">
+                  <strong>Docente
+                  </strong>
+                  <p>Será responsável pela orientação dos projetos desenvolvidos pelos alunos, orientar durante os
+                    assessoramentos, corrigir e orientar sobre a confecção do projeto, corrigir e orientar sobre a
+                    entrega
+                    dos relatórios e seus respectivos indicadores.</p>
+                </div>
+                <div class="disciplinas-text-chard">
+                  <strong>Alunos</strong>
+                  <p>Devem desenvolver projetos visando a capacitação da sociedade em tecnologia.</p>
+                </div>
+                <div class="disciplinas-text-chard">
+                  <strong>Benefícios à sociedade</strong>
+                  <p>Consultoria e oficinas trarão capacitação na temática de informática básica, redes sociais, criação
+                    de sites e segurança; desenvolvimento de ferramentas tecnológicas.</p>
+                </div>
+                <div class="disciplinas-text-chard">
+                  <strong>Local</strong>
+                  <p>Comunidades.</p>
+                </div>
+
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              <span class="disciplinas-number-icon">02</span>
+              <div class="disciplinas-info">
+                <strong>Banco de Dados</strong>
+                <span class="disciplinas-info-category">Dados · Modelagem e Consultas</span>
+              </div>
+
+              <span class="disciplinas-button">Fundamentos</span>
+            </summary>
+
+            <div class="disciplinas-geral">
+              <span class="section-kicker">Ementa completa</span>
+              <h3>Modelagem, integridade e Álgebra Relacional</h3>
+              <p>Conceituação e projeto de bancos de dados. Modelo Entidade-Relacionamento (MER): entidades, atributos,
+                domínios e relacionamentos. Mapeamento conceitual para o modelo lógico e relacional. Estruturas
+                relacionais, restrições e camadas de integridade referencial. Fundamentos matemáticos de consultas
+                através
+                da Álgebra Relacional (operadores relacionais e de conjuntos). Introdução prática à estruturação de
+                esquemas e execução de consultas relacionais.</p>
+
+              <div class="disciplinas-geral-buttons">
+                <span>MER</span>
+                <span>Modelo Relacional</span>
+                <span>Integridade</span>
+                <span>Consultas</span>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              <span class="disciplinas-number-icon">03</span>
+              <div class="disciplinas-info">
+                <strong>Coding</strong>
+
+                <span class="disciplinas-info-category">Algoritmos · Linguagem de referência: Java</span>
+              </div>
+              <span class="disciplinas-button">Programação</span>
+            </summary>
+
+            <div class="disciplinas-geral">
+              <span class="section-kicker">Ementa completa</span>
+              <h3>Algoritmos e resolução de problemas</h3>
+              <p>Conceitos fundamentais de algoritmos e resolução de problemas computacionais. Formas de representação
+                algorítmica: linguagem natural, fluxogramas e pseudocódigo (português estruturado). Tipos primitivos de
+                dados, variáveis, constantes e operadores aritméticos, relacionais e lógicos. Estruturas de controle de
+                fluxo: seleção simples, composta e múltipla escolha. Estruturas de repetição: laços com teste no início,
+                teste no fim e controle por variável contadora/acumuladora. Estruturas de dados compostas homogêneas:
+                vetores (arrays unidimensionais) e matrizes (arrays bidimensionais). Modularização por refinamento
+                top-down: procedimentos, funções, passagem de parâmetros e escopo de variáveis. Introdução a algoritmos
+                de
+                ordenação e busca. Paradigmas de linguagens de programação: sequencial, estruturado e orientado a
+                objetos.
+                Linguagem de programação de referência: Java.</p>
+
+              <div class="disciplinas-geral-buttons">
+                <span>Pseudocódigo
+                </span>
+                <span>Estruturas de controle</span>
+                <span>
+                  Arrays</span>
+                <span>
+                  Java</span>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              <span class="disciplinas-number-icon">04</span>
+              <div class="disciplinas-info">
+
+                <strong>
+                  Engenharia de Software</strong>
+                <span class="disciplinas-info-category">Processos · Requisitos e qualidade</span>
+              </div>
+              <span class="disciplinas-button">Engenharia</span>
+            </summary>
+
+            <div class="disciplinas-geral">
+              <span class="section-kicker">Ementa recebida</span>
+              <h3>Do problema ao software em evolução</h3>
+              <p>Origem, fundamentos e importância da Engenharia de Software frente à crise histórica do software. O
+                ciclo
+                de vida do desenvolvimento de sistemas: levantamento, análise, projeto, implementação, testes,
+                implantação
+                e manutenção. Papéis técnicos e organizacionais: Engenheiro de Software versus Arquiteto de Software e
+                Analista de Sistemas. Gestão ágil de projetos com o framework Scrum: pilares, papéis, eventos e
+                artefatos.
+                Engenharia de Requisitos: requisitos funcionais, não funcionais e de domínio, técnicas de elicitação e
+                critérios de qualidade. Ecossistema de ferramentas modernas, fluxo de trabalho contínuo (CI/CD), revisão
+                de código (code review) e boas práticas de desenvolvimento (Código Limpo, princípios SOLID e padrões de
+                projeto). O impacto da Inteligência Artificial generativa no desenvolvimento de software, automações e
+                competências do engenheiro do futuro.</p>
+              <div class="disciplinas-geral-buttons">
+                <span>Scrum</span>
+                <span>Requisitos</span>
+                <span>CI/CD</span>
+                <span>SOLID</span>
+              </div>
+
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              <span class="disciplinas-number-icon">05</span>
+              <div class="disciplinas-info">
+
+                <strong>Inteligência Artificial</strong>
+                <span class="disciplinas-info-category">IA · Fundamentos e aplicações</span>
+              </div>
+              <span class="disciplinas-button">Tecnologia</span>
+            </summary>
+            <div class="disciplinas-geral">
+              <div class="warning-ia">
+                <strong>Conferir com o docente</strong>
+                <p>A ementa enviada para Inteligência Artificial está igual à
+                  de Engenharia de Software. O conteúdo foi mantido como recebido e sinalizado para validação.</p>
+              </div>
+              <span class="section-kicker">Ementa recebida</span>
+              <h3>Conteúdo informado para a disciplina
+              </h3>
+              <p>Origem, fundamentos e importância da Engenharia de Software frente à crise histórica do software. O
+                ciclo
+                de vida do desenvolvimento de sistemas: levantamento, análise, projeto, implementação, testes,
+                implantação
+                e manutenção. Papéis técnicos e organizacionais: Engenheiro de Software versus Arquiteto de Software e
+                Analista de Sistemas. Gestão ágil de projetos com o framework Scrum: pilares, papéis, eventos e
+                artefatos.
+                Engenharia de Requisitos: requisitos funcionais, não funcionais e de domínio, técnicas de elicitação e
+                critérios de qualidade. Ecossistema de ferramentas modernas, fluxo de trabalho contínuo (CI/CD), revisão
+                de código (code review) e boas práticas de desenvolvimento (Código Limpo, princípios SOLID e padrões de
+                projeto). O impacto da Inteligência Artificial generativa no desenvolvimento de software, automações e
+                competências do engenheiro do futuro.
+              </p>
+
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              <span class="disciplinas-number-icon">06</span>
+              <div class="disciplinas-info">
+
+                <strong>Organização e Arquitetura de Computadores</strong>
+                <span class="disciplinas-info-category">Hardware · Sistemas e desempenho</span>
+              </div>
+
+              <span class="disciplinas-button">Sistemas</span>
+            </summary>
+
+            <div class="disciplinas-geral">
+              <span class="section-kicker">Ementa completa</span>
+              <h3>Como os sistemas computacionais se organizam</h3>
+              <p>Evolução histórica dos computadores, gerações tecnológicas e o modelo da Arquitetura de Von Neumann.
+                Organização estrutural e funcional de sistemas computacionais: Unidade Central de Processamento (CPU),
+                Unidade de Controle (UC), Unidade Lógica e Aritmética (ULA) e registradores. Filosofias de projeto de
+                processadores (RISC, CISC, modelos híbridos) e paralelismo em nível de instrução (pipeline).
+                Representação
+                de dados, sistemas de numeração binária, aritmética com sinal (complemento de dois), detecção de
+                overflow
+                e lógica digital booleana (portas lógicas, circuitos combinacionais e somadores). Conjunto de instruções
+                (ISA), linguagem de máquina versus linguagem de montagem (Assembly), modos de endereçamento e
+                programação
+                em arquitetura MIPS. Hierarquia e organização de memórias: registradores, múltiplos níveis de cache (L1,
+                L2, L3), memória principal (RAM/ROM) e memórias secundárias/auxiliares (discos magnéticos, discos
+                ópticos,
+                RAID). Subsistema de Entrada e Saída (E/S), barramentos (dados, endereços, controle) e interfaces de
+                comunicação. Introdução às arquiteturas paralelas: classificação taxonômica de Flynn, multiprocessadores
+                de memória compartilhada (SMP, UMA, NUMA) e multicomputadores por troca de mensagens com topologias de
+                rede.</p>
+
+              <div class="disciplinas-geral-buttons">
+                <span>Von Neumann
+                </span>
+                <span>CPU</span>
+                <span>Memória</span>
+                <span>MIPS</span>
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              <span class="disciplinas-number-icon">07</span>
+              <div class="disciplinas-info">
+
+                <strong>Web Coding</strong>
+                <span class="disciplinas-info-category">Web · HTML, CSS e publicação</span>
+              </div>
+              <span class="disciplinas-button">Desenvolvimento</span>
+            </summary>
+
+            <div class="disciplinas-geral">
+              <span class="section-kicker">Ementa completa</span>
+              <h3>Construção de aplicações para a internet</h3>
+              <p>Fundamentos do desenvolvimento web e arquitetura de sistemas para a internet. Elementos básicos e ciclo
+                de vida de aplicações web. Visão geral das tecnologias web mais relevantes da atualidade. Estruturação
+                de
+                páginas e marcação semântica com a linguagem HTML. Estilização, layout, paleta de cores e apresentação
+                visual com Cascading Style Sheets (CSS). Programação e construção de aplicações web funcionais
+                integrando
+                mídia, links e lógica interativa (JavaScript opcional). Versionamento e publicação de projetos de
+                software
+                via GitHub.</p>
+
+              <div class="disciplinas-geral-buttons">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>GitHub</span>
+              </div>
+            </div>
+          </details>
+        </section>
+        <div class="disciplinas-floor">
+          <span>I</span>
+          <p>
+            As ementas são exibidas conforme as informações compartilhadas pela turma. Confirme cronogramas, avaliações
+            e atualizações com os docentes.</p>
+        </div>
+
+  </main>
+  <!-- PÁRTE PRINCIPAL DA PÁGINA TERMINA AQUI-->
+
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand-block"><a class="brand brand-footer" href="../index.html"
+          aria-label="Voltar ao início do portal"><span class="brand-mark"
+            aria-hidden="true"><span>CC</span><i>26.1</i></span><span
+            class="brand-copy"><strong>Ciência<span>.</span></strong><small>Computação · turma 2026.1</small></span></a>
+        <p>Um ponto de encontro para estudar, trocar conhecimento e criar.</p>
       </div>
-      <div class="container footer-bottom"><span>© 2026 · Portal da turma de Ciências da Computação</span><a href="#main-content">Voltar ao topo <span aria-hidden="true">↑</span></a></div>
-    </footer>
-  </body>
+      <div class="footer-nav-block"><span class="footer-label">NAVEGUE</span><a href="./disciplinas.html">Disciplinas e
+          ementas</a><a href="./guia_de_estudos.html">Guia de estudos</a><a href="./materiais.html">Materiais de
+          aula</a><a href="./contato.html">Contato</a></div>
+      <div class="footer-note-block"><span class="footer-label">SOBRE ESTE PORTAL</span>
+        <p>Conteúdo de apoio da turma. Confirme atualizações e orientações acadêmicas com os docentes.</p><span
+          class="footer-semester">SEMESTRE <strong>2026.1</strong></span>
+      </div>
+      <a class="uninassau-logo-link" href="https://www.uninassau.edu.br/" target="_blank" rel="noopener noreferrer"
+        aria-label="Acessar o site da UNINASSAU"><img class="footer-logo"
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/uninassau-logo-png_seeklogo-475645-dEZRGXLg1BtYuKZVn3dPVuuZKiru9s.png"
+          alt="Logo UNINASSAU" loading="lazy"></a>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 · Portal da turma de Ciências da Computação</span><a
+        href="#main-content">Voltar ao topo <span aria-hidden="true">↑</span></a></div>
+  </footer>
+</body>
+
 </html>
