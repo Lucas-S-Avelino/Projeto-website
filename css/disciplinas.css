@@ -12,7 +12,7 @@
 
 .upper-area {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
     gap: 36px;
     padding-bottom: 33px;
@@ -42,21 +42,28 @@
 .upper-area-disciplinas-number {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding-top: 12px;
-    padding-right: 15px;
-    padding-bottom: 12px;
-    padding-left: 15px;
-    background: #0d1e35;
+    padding: 12px;
+    gap: 13px 17px;
+    background: var(--navy);
     border: 1px solid var(--line);
     border-radius: 13px;
     color: #e1e7ef;
+    flex-shrink: 0;
 }
+
 
 #disciplina-number {
 
-    font-size: 24px;
+    font-size: 31px;
+    line-height: 1;
+    font-weight: bold;
+}
 
+#disciplina-number-text {
+    font-size: 9px;
+    line-height: 1.35;
+    color: #c3d2e5;
+    font-weight: 500;
 }
 
 .search-bar {
