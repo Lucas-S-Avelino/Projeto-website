@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Materiais</title>
     <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/materiais.css">
 </head>
 
 <body>
@@ -26,14 +27,89 @@
             </button>
             <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
                 <a href="../index.html">Início</a>
-                <a href="disciplinas.html">Disciplina</a>
+                <a href="disciplinas.html">Disciplinas</a>
                 <a href="guia_de_estudos.html">Guia de estudos</a>
                 <a href="materiais.html" aria-current="page">Materiais</a>
                 <a href="contato.html">Contato</a>
             </nav>
-            <a class="header-cta" href="disciplinas.html">Explorar ementas<span>&#8599</span></a>
     </header>
+    <main id="main-content" tabindex="-1">
+      <section class="page-view" id="page-materiais" aria-labelledby="materials-title">
+        <div class="container page-shell">
+          <div class="page-heading page-heading-materials">
+            <div><span class="section-kicker">Biblioteca da turma · 2026.1</span><h1 id="materials-title" tabindex="-1">Materiais para <em>aprender fazendo.</em></h1><p>Resumos, referências visuais e atividades de revisão para acompanhar os temas do período.</p></div>
+            <div class="materials-mark" aria-hidden="true"><span>CC</span><i>2026.1</i><b></b></div>
+          </div>
 
+          <div class="materials-toolbar">
+            <div class="filter-label">Explorar por tipo</div>
+            <div class="filter-list" role="group" aria-label="Filtrar materiais">
+              <button type="button" class="filter-chip is-active" data-material-filter="todos" aria-pressed="true">Todos <span>08</span></button>
+              <button type="button" class="filter-chip" data-material-filter="textos" aria-pressed="false">Textos</button>
+              <button type="button" class="filter-chip" data-material-filter="imagens" aria-pressed="false">Referências visuais</button>
+              <button type="button" class="filter-chip" data-material-filter="simulados" aria-pressed="false">Simulados</button>
+              <button type="button" class="filter-chip" data-material-filter="provas" aria-pressed="false">Provas antigas</button>
+            </div>
+          </div>
+
+          <div class="materials-grid" id="materials-grid">
+            <article class="material-card material-card-text" data-material-card data-material-type="textos">
+              <div class="material-card-top"><span class="material-type-icon icon-type-text" aria-hidden="true">T</span><span class="material-badge">TEXTO DE APOIO</span><span class="material-card-number">01</span></div>
+              <h2>Modelagem relacional em poucas etapas</h2><p>Um roteiro rápido para sair de uma situação do cotidiano e chegar a tabelas com relações claras.</p>
+              <details class="inline-reading"><summary>Ler resumo <span aria-hidden="true">＋</span></summary><div><ol><li>Identifique as entidades do problema e dê nomes no singular.</li><li>Liste atributos e escolha um identificador para cada entidade.</li><li>Defina os relacionamentos e suas cardinalidades.</li><li>Mapeie o modelo para tabelas e marque chaves primárias e estrangeiras.</li><li>Revise domínios, restrições e integridade referencial.</li></ol><p><strong>Exemplo:</strong> em uma biblioteca, <em>Leitor</em>, <em>Livro</em> e <em>Empréstimo</em> ajudam a representar quem retirou qual livro e quando.</p></div></details>
+              <div class="material-meta"><span>Banco de Dados</span><span>Leitura · 4 min</span></div>
+            </article>
+
+            <article class="material-card material-card-text" data-material-card data-material-type="textos">
+              <div class="material-card-top"><span class="material-type-icon icon-type-code" aria-hidden="true">{ }</span><span class="material-badge">ROTEIRO PRÁTICO</span><span class="material-card-number">02</span></div>
+              <h2>Do enunciado ao algoritmo</h2><p>Uma sequência de perguntas para organizar o raciocínio antes de começar a programar.</p>
+              <details class="inline-reading"><summary>Ler roteiro <span aria-hidden="true">＋</span></summary><div><ol><li>O que o problema pede como resultado?</li><li>Quais dados entram e quais condições precisam ser consideradas?</li><li>Quais passos resolvem uma versão pequena do problema?</li><li>Há decisões, repetições, vetores ou funções que simplificam a solução?</li><li>Teste com exemplos, valores-limite e casos inesperados.</li></ol><p>Depois, represente a solução em pseudocódigo e traduza-a para Java.</p></div></details>
+              <div class="material-meta"><span>Coding</span><span>Leitura · 3 min</span></div>
+            </article>
+
+            <article class="material-card material-card-text" data-material-card data-material-type="textos">
+              <div class="material-card-top"><span class="material-type-icon icon-type-system" aria-hidden="true">CPU</span><span class="material-badge">MAPA DE CONCEITOS</span><span class="material-card-number">03</span></div>
+              <h2>Um caminho pelos componentes do computador</h2><p>Relacione processador, memória e entrada/saída para entender o percurso de uma instrução.</p>
+              <details class="inline-reading"><summary>Ver conceitos <span aria-hidden="true">＋</span></summary><div><ul><li><strong>Registradores:</strong> armazenam dados de uso imediato pela CPU.</li><li><strong>Unidade de Controle:</strong> coordena a execução das instruções.</li><li><strong>ULA:</strong> realiza operações aritméticas e lógicas.</li><li><strong>Cache e RAM:</strong> mantêm dados disponíveis em diferentes níveis de acesso.</li><li><strong>Barramentos:</strong> transportam dados, endereços e sinais de controle.</li></ul><p>Use o diagrama da disciplina para conectar cada conceito a exemplos de hardware.</p></div></details>
+              <div class="material-meta"><span>Organização e Arquitetura</span><span>Leitura · 4 min</span></div>
+            </article>
+
+            <article class="material-card material-card-visual" data-material-card data-material-type="imagens">
+              <img src="../assets/modelagem-dados.png" alt="Estudante analisa um diagrama de entidades e relacionamentos em um monitor" loading="lazy">
+              <div class="visual-overlay"><span class="material-badge material-badge-light">REFERÊNCIA VISUAL</span><h2>Entidades em relação</h2><p>Exemplo visual de uma sessão de modelagem de dados.</p></div>
+              <span class="visual-caption">Banco de Dados · imagem ilustrativa gerada</span>
+            </article>
+
+            <article class="material-card material-card-visual" data-material-card data-material-type="imagens">
+              <img src="../assets/arquitetura-hardware.png" alt="Detalhe de um processador instalado em uma placa-mãe" loading="lazy">
+              <div class="visual-overlay"><span class="material-badge material-badge-light">REFERÊNCIA VISUAL</span><h2>Por dentro do hardware</h2><p>Uma visão aproximada dos circuitos e do processador.</p></div>
+              <span class="visual-caption">Arquitetura de Computadores · imagem ilustrativa gerada</span>
+            </article>
+
+            <article class="material-card material-card-visual" data-material-card data-material-type="imagens">
+              <img src="../assets/oficina-comunidade.png" alt="Oficina de alfabetização digital com estudantes e participantes da comunidade" loading="lazy">
+              <div class="visual-overlay"><span class="material-badge material-badge-light">REFERÊNCIA VISUAL</span><h2>Tecnologia em comunidade</h2><p>Aprendizagem colaborativa em uma oficina de inclusão digital.</p></div>
+              <span class="visual-caption">Extensão · imagem ilustrativa gerada</span>
+            </article>
+
+            <article class="material-card material-card-quiz" data-material-card data-material-type="simulados">
+              <div class="material-card-top"><span class="material-type-icon icon-type-quiz" aria-hidden="true">Q</span><span class="material-badge">MATERIAL AUTORAL · NÃO OFICIAL</span><span class="material-card-number">04</span></div>
+              <h2>Simulado rápido: conceitos fundamentais</h2><p>Questões para revisar relações, algoritmos, arquitetura e desenvolvimento web.</p>
+              <details class="inline-reading quiz-reading"><summary>Abrir questões e respostas <span aria-hidden="true">＋</span></summary><div class="quiz-question"><strong>1. Em um modelo relacional, para que serve uma chave estrangeira?</strong><p>Para representar uma referência a uma chave de outra tabela e apoiar a integridade entre registros.</p><strong>2. Qual estrutura repete um bloco de instruções enquanto uma condição for verdadeira?</strong><p>Uma estrutura de repetição, como <code>while</code> ou <code>for</code>, conforme a lógica do problema.</p><strong>3. O que a memória cache busca melhorar?</strong><p>O tempo de acesso a dados e instruções usados com frequência pelo processador.</p><strong>4. Qual é o papel do HTML em uma página web?</strong><p>Estruturar e dar significado ao conteúdo; CSS cuida da apresentação visual.</p></div></details>
+              <div class="material-meta"><span>Revisão integrada</span><span>4 questões</span></div>
+            </article>
+
+            <article class="material-card material-card-exams" data-material-card data-material-type="provas">
+              <div class="exam-illustration" aria-hidden="true"><span class="exam-paper"><i></i><i></i><i></i><b>?</b></span><span class="exam-orbit orbit-one"></span><span class="exam-orbit orbit-two"></span></div>
+              <span class="material-badge">ARQUIVO DA TURMA</span><h2>Provas antigas</h2><p>As avaliações anteriores ainda não foram compartilhadas para publicação neste portal.</p><div class="exam-status"><span class="status-dot"></span> Aguardando envio de materiais oficiais</div><p class="exam-footnote">Enquanto isso, use o simulado autoral como apoio de revisão. Ele não substitui provas anteriores nem orientações dos docentes.</p>
+            </article>
+          </div>
+          <p class="empty-state" id="empty-materials" hidden>Nenhum material desta categoria foi publicado.</p>
+
+          <div class="materials-disclaimer"><span class="note-mark" aria-hidden="true">i</span><p>As fotos e imagens desta página são ilustrações geradas para apoiar os conteúdos; não são registros oficiais da turma. Materiais oficiais e provas antigas serão publicados somente quando forem disponibilizados pela turma ou pelos docentes.</p></div>
+        </div>
+      </section>
+    </main>
 
 
     <footer class="site-footer">
