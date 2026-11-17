@@ -1,5 +1,7 @@
 # Portal Acadêmico — Ciências da Computação 2026.1
 
+https://lucas-s-avelino.github.io/Projeto-website/index.html
+
 Portal web estático desenvolvido para a turma de Ciências da Computação (semestre 2026.1). O projeto reúne ementas curriculares, referências bibliográficas, materiais de apoio para estudos e canal de contato com os estudantes.
 
 ---
