@@ -102,7 +102,7 @@
   border-color: #4a90d9;
 }
 
-.input-search input:focus + label,
+.input-search input:focus+label,
 .input-search:has(input:focus) label {
   color: #4a90d9;
 }
@@ -120,6 +120,34 @@
   padding: 16px;
   cursor: pointer;
   background-color: white;
+}
+
+.disciplinas-list details summary::after {
+  content: "+";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  margin-left: auto;
+  transition: 0.3s;
+  margin-left: auto;
+  background-color: var(--soft-blue);
+  color: var(--blue);
+  border: 1px solid var(--canvas);
+  border-radius: 12px;
+
+}
+
+.disciplinas-list details[open] summary::after {
+  content: "-";
+  transform: translateY(-2px);
+  font-size: 18px;
+  background-color: var(--blue);
+  color: var(--canvas);
 }
 
 .disciplinas-info {
